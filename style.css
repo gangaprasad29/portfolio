@@ -496,34 +496,37 @@ header {
 .edu-item {
   width: 100%;
   height: 220px;
-  background: var(--card-bg, #f9f9f9);
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background: var(--section-bg); /* Updated to use theme variable */
+  border: 1px solid var(--border); /* Added border for dark mode contrast */
+  border-radius: var(--radius); /* Using global radius */
+  box-shadow: var(--shadow); /* Using global shadow */
   padding: 1.5rem;
   text-align: left;
   overflow: hidden;
   position: relative;
-  transition: all 0.4s ease-in-out;
+  transition: var(--transition); /* Using global transition */
 }
 
 .edu-item:hover {
   height: auto; /* Expands to show full content */
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Adjusted for consistency, consider dark mode specific if needed */
 }
 
 .edu-item h3 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: var(--primary-color, #3b82f6);
+  color: var(--primary-dark); /* Updated to use theme variable */
 }
 
 .edu-details {
   transition: opacity 0.4s;
+  color: var(--text-muted); /* Explicitly set for details text */
 }
 
 .edu-details p {
   margin: 0.3rem 0;
   font-size: 0.95rem;
+  color: var(--text-muted); /* Explicitly set for paragraphs */
 }
 
 /* Responsive: auto width with smaller padding */
@@ -756,8 +759,9 @@ a:focus-visible {
   box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+/* Removed the redundant edu-card media query as it's not used */
+/* @media (max-width: 768px) {
   .edu-card {
     width: 90%;
   }
-}
+} */

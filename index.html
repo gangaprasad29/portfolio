@@ -24,9 +24,7 @@
     <meta property="og:url" content="https://yourwebsite.com" />
     <title>Gangaprasad Urekar - Portfolio</title>
 
-    <!-- Favicon -->
     <link rel="icon" type="image/webp" href="images/favicon.webp" />
-    <!-- Preload critical resources -->
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
@@ -34,13 +32,11 @@
     />
     <link rel="preload" href="images/profile.webp" as="image" />
 
-    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -49,26 +45,21 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Loader -->
     <div class="loader">
       <div class="loader-content">
         <div class="spinner"></div>
       </div>
     </div>
 
-    <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
       <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Header / Navigation -->
     <header>
       <nav class="nav">
         <div class="nav-brand">Gangaprasad Urekar</div>
@@ -98,7 +89,6 @@
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
       <div class="hero-content" data-aos="fade-up">
         <div class="hero-text">
@@ -163,7 +153,6 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section">
       <h2 data-aos="fade-up">Projects</h2>
       <div class="project-grid">
@@ -243,7 +232,6 @@
       </div>
     </section>
 
-    <!-- Achievements Section -->
     <section id="achievements" class="section">
       <h2 data-aos="fade-up">Achievements</h2>
       <div class="stats-container">
@@ -265,8 +253,6 @@
       </div>
     </section>
 
-    <!-- Education Section -->
-
     <section id="education" class="section">
       <h2 data-aos="fade-up">Education</h2>
       <p
@@ -277,7 +263,7 @@
           max-width: 800px;
           margin: 0 auto 2rem auto;
           font-size: 1rem;
-          color: #444;
+          color: var(--text-muted); /* Using theme variable for this paragraph */
           line-height: 1.6;
         "
       >
@@ -285,7 +271,6 @@
         My educational details are as follows.
       </p>
       <div class="edu-grid">
-        <!-- Engineering -->
         <div class="edu-item" data-aos="fade-up" data-aos-delay="100">
           <h3>Government College of Engineering, Aurangabad</h3>
           <div class="edu-details">
@@ -307,7 +292,6 @@
           </div>
         </div>
 
-        <!-- High School -->
         <div class="edu-item" data-aos="fade-up" data-aos-delay="200">
           <h3>Post Basic Jr College , Marwali Tanda</h3>
           <div class="edu-details">
@@ -321,7 +305,6 @@
           </div>
         </div>
 
-        <!-- Schooling -->
         <div class="edu-item" data-aos="fade-up" data-aos-delay="300">
           <h3>R.C.S Sainiki Vidyalaya , Sagroli</h3>
           <div class="edu-details">
@@ -337,7 +320,6 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
       <h2 data-aos="fade-up">Skills</h2>
       <div class="skills-list" data-aos="zoom-in">
@@ -352,7 +334,6 @@
       </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="section">
       <h2 data-aos="fade-up">Services</h2>
       <div class="services-grid">
@@ -378,7 +359,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
       <h2 data-aos="fade-up">Get in Touch</h2>
       <div class="contact-links" data-aos="zoom-in">
@@ -462,7 +442,6 @@
       </form>
     </section>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-content">
         <div class="footer-grid">
@@ -514,15 +493,15 @@
       </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="main.js"></script>
 
-    <!-- Education -->
     <script>
-      // Toggle card flip on click
-      document.querySelectorAll(".edu-card").forEach((card) => {
+      // Toggle card flip on click (if you have corresponding CSS for .flip and .edu-inner)
+      document.querySelectorAll(".edu-item").forEach((card) => { // Corrected from .edu-card to .edu-item
+        // The following lines are for a "flip" effect.
+        // If you don't have CSS for .edu-inner and .flip, this JS might not have visible effect.
         const wrapper = document.createElement("div");
         wrapper.classList.add("edu-inner");
         while (card.firstChild) {
