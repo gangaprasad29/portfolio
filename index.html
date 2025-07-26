@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Gangaprasad Urekar - Full Stack Developer specializing in web development and software solutions">
+    <meta name="keywords" content="Android development, web development, Gangaprasad Urekar, LeetCode, Codeforces, open source">
+    <meta name="author" content="Gangaprasad Urekar">
+    <meta property="og:title" content="Gangaprasad Nagnath Urekar - Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Gangaprasad Urekar, a Android Developer passionate about creating innovative applications.">
+    <meta property="og:image" content="images/profile.webp">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <title>Gangaprasad Urekar - Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/favicon.webp">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="images/profile.webp" as="image">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="nav">
+            <div class="nav-brand">Gangaprasad Urekar</div>
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="highlight">Gangaprasad  Urekar</span></h1>
+                <div class="typing-text">I'm a 
+                    <span class="typed-text"></span>
+                    <span class="cursor"></span>
+                </div>
+                <p class="hero-tagline">Crafting innovative web solutions with passion</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary"><i class="fas fa-code"></i> View Projects</a>
+                    <a href="javascript:void(0)" class="btn-secondary" id="download-cv"><i class="fas fa-download"></i> Download CV</a>                </div>
+                <div class="social-links">
+                    <a href="https://github.com/gangaprasad29" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gangaprasad29/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/gangaprasad29/" target="_blank" aria-label="LeetCode Profile"><i class="fas fa-code"></i></a>
+                    <a href="https://codeforces.com/profile/gangaprasad29?csrf_token=298aa0e1fc3610f368ee93ad1a30e282" target="_blank" aria-label="Codeforces Profile"><i class="fas fa-laptop-code"></i></a>
+                    <a href="https://www.instagram.com/gangaprasad_urekar/" target="_blank" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="images/profile.jpg" alt="Gangaprasad Urekar profile picture" class="hero-img" loading="eager">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="flip-up">
+                <img src="images/project1.jpg" alt="Project 1" loading="lazy">
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of the project and its tech stack.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-primary" aria-label="Live Demo of Project 1">Live Demo</a>
+                        <a href="#" target="_blank" class="btn-secondary" aria-label="Source Code of Project 1">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="50">
+                <img src="images/project2.jpg" alt="Project 2" loading="lazy">
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>Overview of the project and technologies used.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="btn-primary" aria-label="Live Demo of Project 2">Live Demo</a>
+                        <a href="#" target="_blank" class="btn-secondary" aria-label="Source Code of Project 2">View Code</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+                <img src="images/project3.jpg" alt="Portfolio Website" loading="lazy">
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-links">
+                        <a href="https://your-live-demo.com" target="_blank" class="btn-primary" aria-label="Live Demo of Portfolio Website">Live Demo</a>
+                        <a href="https://github.com/yourgithubhandle/portfolio" target="_blank" class="btn-secondary" aria-label="Source Code of Portfolio Website">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2 data-aos="fade-up">Achievements</h2>
+        <div class="stats-container">
+            <div class="stat-item" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3><span class="counter">15</span>+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="50">
+                <i class="fas fa-award"></i>
+                <h3><span class="counter">5</span></h3>
+                <p>Certifications</p>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <h3><span class="counter">10</span>+</h3>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+     
+<section id="education" class="section">
+  <h2 data-aos="fade-up">Education</h2>
+<p data-aos="fade-up" data-aos-delay="50"
+   style="text-align: center; max-width: 800px; margin: 0 auto 2rem auto; font-size: 1rem; color: #444; line-height: 1.6;">
+  My education has been a journey of self-discovery and growth.<br>
+  My educational details are as follows.
+</p>
+  <div class="edu-grid">
+
+    <!-- Engineering -->
+    <div class="edu-item" data-aos="fade-up" data-aos-delay="100">
+      <h3>Government College of Engineering, Aurangabad</h3>
+      <div class="edu-details">
+        <p><strong>Degree:</strong> Bachelor of Technology - BTech, Computer Science and Engineering</p>
+        <p><strong>Duration:</strong> Oct 2023 – Sep 2027</p>
+        <p><strong>Grade:</strong> 8.660 CGPA</p>
+        <p>I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Government College of Engineering, Aurangabad. I have completed 4 semesters and have a CGPA of 8.660.</p>
+        <p>Relevant coursework includes: Data Structures, Algorithms, OOP, DBMS, OS, and Computer Networks.</p>
+      </div>
+    </div>
+
+    <!-- High School -->
+    <div class="edu-item" data-aos="fade-up" data-aos-delay="200">
+      <h3>Post Basic Jr College , Marwali Tanda </h3>
+      <div class="edu-details">
+        <p><strong>Degree:</strong> HSC (XII), Science </p>
+        <p><strong>Duration:</strong>  2021 –  2023</p>
+        <p><strong>Grade:</strong> 76.67%</p>
+        <p>I completed my class 12 education here, with a focus on Science and Computer Application.</p>
+      </div>
+    </div>
+
+    <!-- Schooling -->
+    <div class="edu-item" data-aos="fade-up" data-aos-delay="300">
+      <h3>R.C.S Sainiki Vidyalaya , Sagroli</h3>
+      <div class="edu-details">
+        <p><strong>Degree:</strong> SSC (X)</p>
+        <p><strong>Duration:</strong>  2017 –  2021</p>
+        <p><strong>Grade:</strong> 90.20%</p>
+        <p>I completed my class 10 education here, studying Science with Computer Application.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 data-aos="fade-up">Skills</h2>
+        <div class="skills-list" data-aos="zoom-in">
+            <div class="skill-item">HTML5</div>
+            <div class="skill-item">CSS3</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Git</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">MongoDB</div>
+            <div class="skill-item">Express.js</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 data-aos="fade-up">Services</h2>
+        <div class="services-grid">
+            <div class="service-item" data-aos="flip-up">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Creating responsive, user-friendly websites with modern frameworks.</p>
+            </div>
+            <div class="service-item" data-aos="flip-up" data-aos-delay="50">
+                <i class="fas fa-server"></i>
+                <h3>Backend Development</h3>
+                <p>Building scalable APIs and server-side solutions.</p>
+            </div>
+            <div class="service-item" data-aos="flip-up" data-aos-delay="100">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Problem Solving</h3>
+                <p>Optimizing algorithms for competitive programming and applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 data-aos="fade-up">Get in Touch</h2>
+        <div class="contact-links" data-aos="zoom-in">
+            <a href="mailto:gangaprasadurekar0@gmail.com" aria-label="Email" class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/gangaprasad29" target="_blank" aria-label="GitHub Profile" class="contact-icon">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourlinkedinhandle" target="_blank" aria-label="LinkedIn Profile" class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/yourleetcodehandle" target="_blank" aria-label="LeetCode Profile" class="contact-icon">
+                <i class="fas fa-code"></i>
+            </a>
+            <a href="https://codeforces.com/profile/yourcodeforceshandle" target="_blank" aria-label="Codeforces Profile" class="contact-icon">
+                <i class="fas fa-laptop-code"></i>
+            </a>
+            <a href="https://instagram.com/yourinstagramhandle" target="_blank" aria-label="Instagram Profile" class="contact-icon">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/your@email.com" method="POST" id="contactForm" data-aos="fade-up">
+            <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+            <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+            <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com/gangaprasad29" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.lhttps://leetcode.com/u/gangaprasad29/" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+                        <a href="https://codeforces.com/profile/yourcodeforceshandle" target="_blank" aria-label="Codeforces"><i class="fas fa-laptop-code"></i></a>
+                        <a href="https://instagram.com/yourinstagramhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Gangaprasad Urekar. Built with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="main.js"></script>
+
+    <!-- Education --> 
+     <script>
+  // Toggle card flip on click
+  document.querySelectorAll('.edu-card').forEach(card => {
+    const wrapper = document.createElement('div');
+    wrapper.classList.add('edu-inner');
+    while (card.firstChild) {
+      wrapper.appendChild(card.firstChild);
+    }
+    card.appendChild(wrapper);
+
+    card.addEventListener('click', () => {
+      card.classList.toggle('flip');
+    });
+  });
+</script>
+
+</body>
+</html>
